@@ -43,8 +43,8 @@ requirements:
     - r-jpeg
     - r-png
     - r-rlang >=1.1.0
-    - r-systemfonts >=1.1.0
-    - r-textshaping >=0.4.0
+    - r-systemfonts >=1.2.0
+    - r-textshaping >=1.0.0
     - r-vctrs
   run:
     - r-base
@@ -54,8 +54,8 @@ requirements:
     - r-jpeg
     - r-png
     - r-rlang >=1.1.0
-    - r-systemfonts >=1.1.0
-    - r-textshaping >=0.4.0
+    - r-systemfonts >=1.2.0
+    - r-textshaping >=1.0.0
     - r-vctrs
 
 test:
