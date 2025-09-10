@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/marquee_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/marquee/marquee_{{ version }}.tar.gz
-  sha256: 371638a60e18a2b173fc8a457c4afcdd6ddfac0a8f34362d7d23fd5094b2e75c
+  sha256: bb935e68c1e278aa9d4937f5f414e1b9fd7fd6666dfb3fbb795444b0a30ba04e
 
 build:
   number: 0
@@ -37,10 +37,12 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-s7
     - r-cli
     - r-cpp11
     - r-glue
     - r-jpeg
+    - r-lifecycle
     - r-png
     - r-rlang >=1.1.0
     - r-systemfonts >=1.2.0
@@ -48,10 +50,12 @@ requirements:
     - r-vctrs
   run:
     - r-base
+    - r-s7
     - r-cli
     - r-cpp11
     - r-glue
     - r-jpeg
+    - r-lifecycle
     - r-png
     - r-rlang >=1.1.0
     - r-systemfonts >=1.2.0
