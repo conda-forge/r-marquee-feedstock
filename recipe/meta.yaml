@@ -37,10 +37,12 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-s7
     - r-cli
     - r-cpp11
     - r-glue
     - r-jpeg
+    - r-lifecycle
     - r-png
     - r-rlang >=1.1.0
     - r-systemfonts >=1.2.0
@@ -48,10 +50,12 @@ requirements:
     - r-vctrs
   run:
     - r-base
+    - r-s7
     - r-cli
     - r-cpp11
     - r-glue
     - r-jpeg
+    - r-lifecycle
     - r-png
     - r-rlang >=1.1.0
     - r-systemfonts >=1.2.0
