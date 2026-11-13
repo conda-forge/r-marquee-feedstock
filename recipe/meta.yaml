@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/marquee_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/marquee/marquee_{{ version }}.tar.gz
-  sha256: 4063b45896f7e32d5ef381c405a3553060aa883bd3cce6ea59d9397f053451aa
+  sha256: 1052a60f950a9e8f642fc95cf33c9effbf275a72e54a8d037efe8839b0900aff
 
 build:
   number: 0
